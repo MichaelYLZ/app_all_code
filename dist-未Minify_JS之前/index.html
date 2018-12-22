@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>一句话APP</title>
+  <script>
+  window.helpers = (function () {
+    
+  function createNewSen(attrs = {}) {
+    const senNew = {
+      sentence: attrs.sentence || '提示：请编辑',
+      id: attrs.id, 
+    };
+
+    return senNew;
+  }
+    
+  return {
+    createNewSen
+  };
+    
+}());  
+  </script>
+<link href="css/main.css" rel="stylesheet"></head>
+<body>
+<div id="app"></div>
+<script src="js/client.js"></script>
+<script type="text/javascript" src="js/bundle.js"></script></body>
+</html>
